@@ -68,7 +68,7 @@ var handlers = {
     toggleCompleted: function() {
         var toggleCompletedPositionInput = document.getElementById("toggleCompletedPositionInput");
         todoList.toggleCompleted(toggleCompletedPositionInput.valueAsNumber);
-        this.toggleCompletedPositionInput.value = "";
+        toggleCompletedPositionInput.value = "";
         view.displayTodos();
 
     },
