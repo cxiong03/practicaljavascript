@@ -56,21 +56,18 @@ var handlers = {
         changeTodoPositionInput.value = "";
         changeTodoTextInput.value = "";
         view.displayTodos();
-
     },
     deleteTodo: function() {
         var deleteTodoPositionInput = document.getElementById("deleteTodoPositionInput");
         todoList.deleteTodo(deleteTodoPositionInput.valueAsNumber);
         deleteTodoPositionInput.value = "";
         view.displayTodos();
-
     },
     toggleCompleted: function() {
         var toggleCompletedPositionInput = document.getElementById("toggleCompletedPositionInput");
         todoList.toggleCompleted(toggleCompletedPositionInput.valueAsNumber);
         toggleCompletedPositionInput.value = "";
         view.displayTodos();
-
     },
     toggleAll: function() {
         todoList.toggleAll();
